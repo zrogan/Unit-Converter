@@ -16,6 +16,7 @@
 		1F8EB6B81BEAA5C8009DF0FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8EB6B61BEAA5C8009DF0FE /* LaunchScreen.storyboard */; };
 		1F8EB6C01BEAA6A1009DF0FE /* TableViewControllerMedidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8EB6BF1BEAA6A1009DF0FE /* TableViewControllerMedidas.swift */; };
 		1F8EB6C41BEAAF06009DF0FE /* Temperatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8EB6C31BEAAF06009DF0FE /* Temperatura.swift */; };
+		1FE777C41C23E90900BE8711 /* Comprimento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE777C31C23E90900BE8711 /* Comprimento.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1F8EB6B91BEAA5C8009DF0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F8EB6BF1BEAA6A1009DF0FE /* TableViewControllerMedidas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerMedidas.swift; sourceTree = "<group>"; };
 		1F8EB6C31BEAAF06009DF0FE /* Temperatura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperatura.swift; sourceTree = "<group>"; };
+		1FE777C31C23E90900BE8711 /* Comprimento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comprimento.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				1F19E4B11BEB15C300D95861 /* TableViewControllerOrigens.swift */,
 				1F19E4B31BEB297800D95861 /* TableViewControllerDestinos.swift */,
 				1F19E4B51BF3F97600D95861 /* ViewController.swift */,
+				1FE777C31C23E90900BE8711 /* Comprimento.swift */,
 			);
 			path = "Unit Converter";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				1F19E4B61BF3F97600D95861 /* ViewController.swift in Sources */,
 				1F8EB6C01BEAA6A1009DF0FE /* TableViewControllerMedidas.swift in Sources */,
 				1F19E4B41BEB297800D95861 /* TableViewControllerDestinos.swift in Sources */,
+				1FE777C41C23E90900BE8711 /* Comprimento.swift in Sources */,
 				1F8EB6AE1BEAA5C8009DF0FE /* AppDelegate.swift in Sources */,
 				1F19E4B21BEB15C300D95861 /* TableViewControllerOrigens.swift in Sources */,
 				1F8EB6C41BEAAF06009DF0FE /* Temperatura.swift in Sources */,

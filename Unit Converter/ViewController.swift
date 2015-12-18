@@ -20,7 +20,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelDestino: UILabel!
     @IBOutlet weak var labelResultado: UILabel!
     @IBAction func buttonCalcula(sender: AnyObject) {
-        labelResultado.text = String(Temperatura.convert(tempOrigem: origem!, tempDestino: destino!, valor: Double(textValor.text!)!))
+        if medida == "Temperatura" {
+            labelResultado.text = String(Temperatura.convert(tempOrigem: origem!, tempDestino: destino!, valor: Double(textValor.text!)!))
+        } else if medida == "Distância" {
+            labelResultado.text = String(Comprimento.convert(tempOrigem: origem!, tempDestino: destino!, valor: Double(textValor.text!)!))
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
