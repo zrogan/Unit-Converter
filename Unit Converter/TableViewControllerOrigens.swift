@@ -23,6 +23,8 @@ class TableViewControllerOrigens: UITableViewController {
             medidas = Temperatura.getList()
         } else if medida == "Distância" {
             medidas = Comprimento.getList()
+        } else if medida == "Área" {
+            medidas = Area.getList()
         }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
