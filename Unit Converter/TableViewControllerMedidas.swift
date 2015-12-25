@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewControllerMedidas: UITableViewController, origensDelegate {
 
-    let medidas = ["Distância","Peso", "Volume", "Área", "Ângulos", "Temperatura", "Coordenadas geográficas"]
+    let medidas = ["Distância","Peso", "Volume", "Área", "Ângulos", "Temperatura", "Coordenadas Geográficas"]
     
     var medidaEscolhida : String?
     

@@ -25,6 +25,14 @@ class TableViewControllerOrigens: UITableViewController {
             medidas = Comprimento.getList()
         } else if medida == "Área" {
             medidas = Area.getList()
+        } else if medida == "Peso" {
+            medidas = Peso.getList()
+        } else if medida == "Volume" {
+            medidas = Volume.getList()
+        } else if medida == "Ângulos" {
+            medidas = Angulo.getList()
+        } else if medida == "Coordenadas Geográficas" {
+            medidas = CoordenadaGeografica.getList()
         }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

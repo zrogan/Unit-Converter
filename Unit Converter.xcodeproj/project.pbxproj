@@ -16,6 +16,12 @@
 		1F8EB6B81BEAA5C8009DF0FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8EB6B61BEAA5C8009DF0FE /* LaunchScreen.storyboard */; };
 		1F8EB6C01BEAA6A1009DF0FE /* TableViewControllerMedidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8EB6BF1BEAA6A1009DF0FE /* TableViewControllerMedidas.swift */; };
 		1F8EB6C41BEAAF06009DF0FE /* Temperatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8EB6C31BEAAF06009DF0FE /* Temperatura.swift */; };
+		1FC038BD1C2DE22C00B90937 /* Peso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC038BC1C2DE22C00B90937 /* Peso.swift */; };
+		1FC038BF1C2DE23800B90937 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC038BE1C2DE23800B90937 /* Volume.swift */; };
+		1FC038C11C2DE25000B90937 /* Angulos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC038C01C2DE25000B90937 /* Angulos.swift */; };
+		1FC038C31C2DE26300B90937 /* CoordenadasGeograficas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC038C21C2DE26300B90937 /* CoordenadasGeograficas.swift */; };
+		1FC038C51C2DE67500B90937 /* Conversao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC038C41C2DE67500B90937 /* Conversao.swift */; };
+		1FC038CB1C2E085900B90937 /* TableViewControllerHistorico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC038CA1C2E085900B90937 /* TableViewControllerHistorico.swift */; };
 		1FE02E761C2527CC00DD623F /* Área.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE02E751C2527CC00DD623F /* Área.swift */; };
 		1FE777C41C23E90900BE8711 /* Comprimento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE777C31C23E90900BE8711 /* Comprimento.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +38,12 @@
 		1F8EB6B91BEAA5C8009DF0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F8EB6BF1BEAA6A1009DF0FE /* TableViewControllerMedidas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerMedidas.swift; sourceTree = "<group>"; };
 		1F8EB6C31BEAAF06009DF0FE /* Temperatura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperatura.swift; sourceTree = "<group>"; };
+		1FC038BC1C2DE22C00B90937 /* Peso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peso.swift; sourceTree = "<group>"; };
+		1FC038BE1C2DE23800B90937 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		1FC038C01C2DE25000B90937 /* Angulos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angulos.swift; sourceTree = "<group>"; };
+		1FC038C21C2DE26300B90937 /* CoordenadasGeograficas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordenadasGeograficas.swift; sourceTree = "<group>"; };
+		1FC038C41C2DE67500B90937 /* Conversao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversao.swift; sourceTree = "<group>"; };
+		1FC038CA1C2E085900B90937 /* TableViewControllerHistorico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerHistorico.swift; sourceTree = "<group>"; };
 		1FE02E751C2527CC00DD623F /* Área.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Área.swift"; sourceTree = "<group>"; };
 		1FE777C31C23E90900BE8711 /* Comprimento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comprimento.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +90,12 @@
 				1F19E4B51BF3F97600D95861 /* ViewController.swift */,
 				1FE777C31C23E90900BE8711 /* Comprimento.swift */,
 				1FE02E751C2527CC00DD623F /* Área.swift */,
+				1FC038BC1C2DE22C00B90937 /* Peso.swift */,
+				1FC038BE1C2DE23800B90937 /* Volume.swift */,
+				1FC038C01C2DE25000B90937 /* Angulos.swift */,
+				1FC038C21C2DE26300B90937 /* CoordenadasGeograficas.swift */,
+				1FC038C41C2DE67500B90937 /* Conversao.swift */,
+				1FC038CA1C2E085900B90937 /* TableViewControllerHistorico.swift */,
 			);
 			path = "Unit Converter";
 			sourceTree = "<group>";
@@ -153,13 +171,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE02E761C2527CC00DD623F /* Área.swift in Sources */,
+				1FC038C31C2DE26300B90937 /* CoordenadasGeograficas.swift in Sources */,
 				1F19E4B61BF3F97600D95861 /* ViewController.swift in Sources */,
+				1FC038BD1C2DE22C00B90937 /* Peso.swift in Sources */,
 				1F8EB6C01BEAA6A1009DF0FE /* TableViewControllerMedidas.swift in Sources */,
 				1F19E4B41BEB297800D95861 /* TableViewControllerDestinos.swift in Sources */,
+				1FC038C11C2DE25000B90937 /* Angulos.swift in Sources */,
+				1FC038BF1C2DE23800B90937 /* Volume.swift in Sources */,
+				1FC038CB1C2E085900B90937 /* TableViewControllerHistorico.swift in Sources */,
 				1FE777C41C23E90900BE8711 /* Comprimento.swift in Sources */,
 				1F8EB6AE1BEAA5C8009DF0FE /* AppDelegate.swift in Sources */,
 				1F19E4B21BEB15C300D95861 /* TableViewControllerOrigens.swift in Sources */,
 				1F8EB6C41BEAAF06009DF0FE /* Temperatura.swift in Sources */,
+				1FC038C51C2DE67500B90937 /* Conversao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
