@@ -41,7 +41,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehD-ql-ef7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9" y="-190"/>
+            <point key="canvasLocation" x="-9" y="-196"/>
         </scene>
         <!--Origem-->
         <scene sceneID="yOB-6d-8g4">
@@ -80,7 +80,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74U-qy-BTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="702" y="-190"/>
+            <point key="canvasLocation" x="642" y="-196"/>
         </scene>
         <!--Destino-->
         <scene sceneID="NQd-d3-WJy">
@@ -127,7 +127,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqA-z7-r7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-666" y="390"/>
+            <point key="canvasLocation" x="-666" y="437"/>
         </scene>
         <!--Conversão-->
         <scene sceneID="EMF-Eo-AWy">
@@ -226,6 +226,24 @@
             </objects>
             <point key="canvasLocation" x="-9" y="437"/>
         </scene>
+        <!--Conversão-->
+        <scene sceneID="Z2G-Lu-Fg2">
+            <objects>
+                <viewController storyboardIdentifier="coordenadasGeograficas" title="Conversão" id="C7z-vo-95g" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oqt-kt-UYe"/>
+                        <viewControllerLayoutGuide type="bottom" id="SRo-kt-LjO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wWV-we-3Cx">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ED-wu-Hzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="437"/>
+        </scene>
         <!--Histórico-->
         <scene sceneID="kha-BU-TvG">
             <objects>
@@ -267,7 +285,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak3-JY-OUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="678" y="480"/>
+            <point key="canvasLocation" x="633" y="-788"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t4c-BL-Fa8">

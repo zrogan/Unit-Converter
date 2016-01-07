@@ -49,12 +49,13 @@ class TableViewControllerMedidas: UITableViewController, origensDelegate {
         return cell
     }
     
-    /*
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        medidaEscolhida = medidas[indexPath.row]
-        print("didSelect")
+        if (medidas[indexPath.row]=="Coordenadas Geográficas") {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("coordenadasGeograficas")
+            self.presentViewController(vc, animated: true, completion: nil)
+        }
     }
-    */
     
     /*
     // Override to support conditional editing of the table view.
@@ -99,6 +100,11 @@ class TableViewControllerMedidas: UITableViewController, origensDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let table : UITableViewCell = sender as! UITableViewCell
+        let text = table.textLabel?.text
+        if text == "Coordenadas Geográficas" {
+            return
+        }
         if segue.identifier == "medidasOrigem"{
             let nextView = segue.destinationViewController as! TableViewControllerOrigens
             nextView.delegate = self

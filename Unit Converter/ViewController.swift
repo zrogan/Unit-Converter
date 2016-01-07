@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         } else if self.medida == "Ângulos" {
             self.labelResultado.text = String(Angulo.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor: Double(self.textValor.text!)!))
         } else if self.medida == "Coordenadas Geográficas" {
-            self.labelResultado.text = String(CoordenadaGeografica.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor: Double(self.textValor.text!)!))
+            self.labelResultado.text = String(CoordenadaGeografica.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor1: Double(self.textValor.text!)!,valor2: 0.0,valor3: 0.0))
         }
         let conversao = Conversao(medida: self.medida!, origem: self.origem!, destino: self.destino!, valorOriginal: self.textValor.text!, valorFinal: self.labelResultado.text!)
         if (self.TabConversoes.count>=10) {
