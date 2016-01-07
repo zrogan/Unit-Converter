@@ -16,34 +16,47 @@ class ViewController: UIViewController {
     var destino : String?
     var TabConversoes : [Conversao] = []
     
+    @IBAction func goHome(sender: UIBarButtonItem) {
+        self.navigationController!.popToRootViewControllerAnimated(true)
+    }
     @IBOutlet weak var labelOrigem: UILabel!
     @IBOutlet weak var textValor: UITextField!
     @IBOutlet weak var labelDestino: UILabel!
     @IBOutlet weak var labelResultado: UILabel!
     
     @IBAction func buttonCalcula(sender: AnyObject) {
-        if medida == "Temperatura" {
-            labelResultado.text = String(Temperatura.convert(tempOrigem: origem!, tempDestino: destino!, valor: Double(textValor.text!)!))
-        } else if medida == "Distância" {
-            labelResultado.text = String(Comprimento.convert(tempOrigem: origem!, tempDestino: destino!, valor: Double(textValor.text!)!))
-        } else if medida == "Área" {
-            labelResultado.text = String(Area.convert(tempOrigem: origem!, tempDestino: destino!, valor: Double(textValor.text!)!))
-        } else if medida == "Peso" {
-            labelResultado.text = String(Peso.convert(tempOrigem: origem!, tempDestino: destino!, valor: Double(textValor.text!)!))
-        } else if medida == "Volume" {
-            labelResultado.text = String(Volume.convert(tempOrigem: origem!, tempDestino: destino!, valor: Double(textValor.text!)!))
-        } else if medida == "Ângulos" {
-            labelResultado.text = String(Angulo.convert(tempOrigem: origem!, tempDestino: destino!, valor: Double(textValor.text!)!))
-        } else if medida == "Coordenadas Geográficas" {
-            labelResultado.text = String(CoordenadaGeografica.convert(tempOrigem: origem!, tempDestino: destino!, valor: Double(textValor.text!)!))
+        let valorOrigem = Double(self.textValor.text!)
+        if (valorOrigem == nil) {
+            self.textValor.text = ""
+            let refreshAlert = UIAlertController(title: "Erro", message: "Por favor inserir valor correcto.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in return
+            }))
+            
+            presentViewController(refreshAlert, animated: true, completion: nil)
         }
-        let conversao = Conversao(medida: medida!, origem: origem!, destino: destino!, valorOriginal: textValor.text!, valorFinal: labelResultado.text!)
-        if (TabConversoes.count>=10) {
-            TabConversoes.removeFirst()
+        if self.medida == "Temperatura" {
+            self.labelResultado.text = String(Temperatura.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor: Double(self.textValor.text!)!))
+        } else if self.medida == "Distância" {
+            self.labelResultado.text = String(Comprimento.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor: Double(self.textValor.text!)!))
+        } else if self.medida == "Área" {
+            self.labelResultado.text = String(Area.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor: Double(self.textValor.text!)!))
+        } else if self.medida == "Peso" {
+            self.labelResultado.text = String(Peso.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor: Double(self.textValor.text!)!))
+        } else if self.medida == "Volume" {
+            self.labelResultado.text = String(Volume.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor: Double(self.textValor.text!)!))
+        } else if self.medida == "Ângulos" {
+            self.labelResultado.text = String(Angulo.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor: Double(self.textValor.text!)!))
+        } else if self.medida == "Coordenadas Geográficas" {
+            self.labelResultado.text = String(CoordenadaGeografica.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor: Double(self.textValor.text!)!))
         }
-        TabConversoes.append(conversao)
+        let conversao = Conversao(medida: self.medida!, origem: self.origem!, destino: self.destino!, valorOriginal: self.textValor.text!, valorFinal: self.labelResultado.text!)
+        if (self.TabConversoes.count>=10) {
+            self.TabConversoes.removeFirst()
+        }
+        self.TabConversoes.append(conversao)
         
-        gravar()
+        self.gravar()
     }
     
     override func viewDidLoad() {

@@ -17,6 +17,9 @@ class TableViewControllerOrigens: UITableViewController {
     var medidas : Array<String>?
     var delegate:origensDelegate? = nil
     
+    @IBAction func goHome(sender: UIBarButtonItem) {
+        self.navigationController!.popToRootViewControllerAnimated(true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         if medida == "Temperatura" {

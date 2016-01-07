@@ -15,6 +15,9 @@ class TableViewControllerDestinos: UITableViewController {
     var origem : String?
     
     
+    @IBAction func goHome(sender: UIBarButtonItem) {
+        self.navigationController!.popToRootViewControllerAnimated(true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         medidas?.removeAtIndex((medidas?.indexOf(origem!))!)

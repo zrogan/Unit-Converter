@@ -69,7 +69,13 @@
                             <outlet property="delegate" destination="5Oq-6F-pzZ" id="s80-HM-hVV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Origem" id="dCA-gW-LbR"/>
+                    <navigationItem key="navigationItem" title="Origem" id="dCA-gW-LbR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="i47-CH-O8f">
+                            <connections>
+                                <action selector="goHome:" destination="5Oq-6F-pzZ" id="uio-S6-sd4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74U-qy-BTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -102,7 +108,21 @@
                             <outlet property="delegate" destination="RGA-zd-vVr" id="kbo-BL-7ZF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Destino" id="kvL-Vc-47H"/>
+                    <toolbarItems>
+                        <barButtonItem systemItem="stop" id="oX3-LU-QIo">
+                            <connections>
+                                <action selector="goHome:" destination="5Oq-6F-pzZ" id="p6J-Y7-bdl"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Destino" id="kvL-Vc-47H">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="RnT-zd-TBv">
+                            <connections>
+                                <action selector="goHome:" destination="RGA-zd-vVr" id="Gvn-Zq-b4X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqA-z7-r7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -121,14 +141,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvM-3A-TRZ">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="101" width="139" height="30"/>
-                                </variation>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8d-3w-BCV">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -166,28 +178,42 @@
                                     <rect key="frame" x="20" y="72" width="280" height="21"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvM-3A-TRZ">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="101" width="139" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="rvM-3A-TRZ"/>
                                 <exclude reference="I8d-3w-BCV"/>
                                 <exclude reference="Vwm-PN-qdo"/>
                                 <exclude reference="p8B-bt-vTz"/>
                                 <exclude reference="VZO-Cc-pwn"/>
+                                <exclude reference="rvM-3A-TRZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="rvM-3A-TRZ"/>
                                 <include reference="I8d-3w-BCV"/>
                                 <include reference="Vwm-PN-qdo"/>
                                 <include reference="p8B-bt-vTz"/>
                                 <include reference="VZO-Cc-pwn"/>
+                                <include reference="rvM-3A-TRZ"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Conversão" id="gFD-ps-Fhu"/>
+                    <navigationItem key="navigationItem" title="Conversão" id="gFD-ps-Fhu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="Ktk-SG-AiP">
+                            <connections>
+                                <action selector="goHome:" destination="RIn-nE-gfh" id="vYb-Kt-H5j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="labelDestino" destination="I8d-3w-BCV" id="yG1-aD-9lP"/>
@@ -205,15 +231,19 @@
             <objects>
                 <tableViewController id="7ld-2J-EMn" customClass="TableViewControllerHistorico" customModule="Unit_Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iBE-X8-7P1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellHistorico" textLabel="oxc-bt-mJi" style="IBUITableViewCellStyleDefault" id="iZn-e7-bN0">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iZn-e7-bN0" id="RgW-fd-v53">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oxc-bt-mJi">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
