@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonCalcula(sender: AnyObject) {
         let valorOrigem = Double(self.textValor.text!)
+        print(valorOrigem)
         if (valorOrigem == nil) {
             self.textValor.text = ""
             let refreshAlert = UIAlertController(title: "Erro", message: "Por favor inserir valor correcto.", preferredStyle: UIAlertControllerStyle.Alert)
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
             }))
             
             presentViewController(refreshAlert, animated: true, completion: nil)
+            return
         }
         if self.medida == "Temperatura" {
             self.labelResultado.text = String(Temperatura.convert(tempOrigem: self.origem!, tempDestino: self.destino!, valor: Double(self.textValor.text!)!))

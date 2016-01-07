@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0D25F61C3E253A00B089D6 /* ViewControllerCG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D25F51C3E253A00B089D6 /* ViewControllerCG.swift */; };
 		1F19E4B21BEB15C300D95861 /* TableViewControllerOrigens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19E4B11BEB15C300D95861 /* TableViewControllerOrigens.swift */; };
 		1F19E4B41BEB297800D95861 /* TableViewControllerDestinos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19E4B31BEB297800D95861 /* TableViewControllerDestinos.swift */; };
 		1F19E4B61BF3F97600D95861 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19E4B51BF3F97600D95861 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0D25F51C3E253A00B089D6 /* ViewControllerCG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCG.swift; sourceTree = "<group>"; };
 		1F19E4B11BEB15C300D95861 /* TableViewControllerOrigens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerOrigens.swift; sourceTree = "<group>"; };
 		1F19E4B31BEB297800D95861 /* TableViewControllerDestinos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerDestinos.swift; sourceTree = "<group>"; };
 		1F19E4B51BF3F97600D95861 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				1FC038C21C2DE26300B90937 /* CoordenadasGeograficas.swift */,
 				1FC038C41C2DE67500B90937 /* Conversao.swift */,
 				1FC038CA1C2E085900B90937 /* TableViewControllerHistorico.swift */,
+				1F0D25F51C3E253A00B089D6 /* ViewControllerCG.swift */,
 			);
 			path = "Unit Converter";
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				1FE02E761C2527CC00DD623F /* Área.swift in Sources */,
 				1FC038C31C2DE26300B90937 /* CoordenadasGeograficas.swift in Sources */,
 				1F19E4B61BF3F97600D95861 /* ViewController.swift in Sources */,
+				1F0D25F61C3E253A00B089D6 /* ViewControllerCG.swift in Sources */,
 				1FC038BD1C2DE22C00B90937 /* Peso.swift in Sources */,
 				1F8EB6C01BEAA6A1009DF0FE /* TableViewControllerMedidas.swift in Sources */,
 				1F19E4B41BEB297800D95861 /* TableViewControllerDestinos.swift in Sources */,

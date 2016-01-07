@@ -17,7 +17,7 @@ class CoordenadaGeografica {
     static func convertFromGrausDToGrausG(valor l : Double) -> (Double,Double,Double) {
         let h = Double(Int(l))
         let m = (l-h)*60
-        let s = (Double(Int(m))-m)*60
+        let s = (m-Double(Int(m)))*60
         return(h,m,s)
         
     }

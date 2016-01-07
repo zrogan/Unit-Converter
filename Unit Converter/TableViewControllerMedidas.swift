@@ -14,6 +14,7 @@ class TableViewControllerMedidas: UITableViewController, origensDelegate {
     
     var medidaEscolhida : String?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -94,17 +95,22 @@ class TableViewControllerMedidas: UITableViewController, origensDelegate {
 
     
     // MARK: - Navigation
-    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if identifier=="medidasOrigem" {
+        let table : UITableViewCell = sender as! UITableViewCell
+        let text = table.textLabel?.text
+        if text == "Coordenadas Geográficas" {
+            return false
+        }
+        }
+        return true
+    }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let table : UITableViewCell = sender as! UITableViewCell
-        let text = table.textLabel?.text
-        if text == "Coordenadas Geográficas" {
-            return
-        }
+        
         if segue.identifier == "medidasOrigem"{
             let nextView = segue.destinationViewController as! TableViewControllerOrigens
             nextView.delegate = self
